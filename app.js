@@ -35,9 +35,9 @@ router.all('/hello/:name', async ctx =>{
 
 app.use(router.routes());
 
-let port = process.env.PORT || 8081;
+let port = process.env.PORT || 8080;
 try{
-	app.listen(8081);
+	app.listen(8080);
 	logger.info('Server started successfully and listened on '+ port +'\n'+'http://localhost:'+port);
 }catch(err){
 	console.error(err);
